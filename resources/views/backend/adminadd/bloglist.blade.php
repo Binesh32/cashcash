@@ -2,12 +2,14 @@
 
 @section('content')
 
-<section class="ls section_padding_top_50 section_padding_bottom_50 columns_padding_10">
+<section class="section" style="background-color: white;">
 				<div class="container-fluid">
 
 					<div class="row">
 						<div class="col-md-12">
-							<h3>Posts</h3>
+							<h3>Blogs List </h3> 
+              <a class="theme_button color1 wide_button" style="margin-right: 90rem;" href="{{route('addblogs')}}">Add Blog</a>
+              <a class="theme_button color1 wide_button" href="{{ route('blogs') }}">View BLogs</a>
 						</div>
 						<!-- .col-* -->
 					</div>
@@ -27,9 +29,9 @@
                       <input type="checkbox">
                     </td>
                     <th>Title:</th>
-                    <th>Author:</th>
-                    <th>Date:</th>
-                    <th>Categories:</th>
+                    <th>Blogs</th>
+                    <th>Image</th>
+                   
                     
                     <th>Actions:</th> <!-- Added column for actions -->
                   </tr>
@@ -58,11 +60,10 @@
                       </div>
                     </td>
                     <td class="media-middle">
-                      <time datetime="2017-02-08T20:25:23+00:00" class="entry-date">08.02.2017 at 20:25</time>
+                    <img src="images/slide02.jpg" class="img-fluid" style="max-width: 200px; height: auto;" alt="Post Image">
+
                     </td>
-                    <td class="media-middle">
-                      uncategorized, category1
-                    </td>
+                    
                     
                     <td class="media-middle"> <!-- Added column for actions -->
                       
@@ -117,4 +118,6 @@
 				<!-- .container -->
 			</section>
 
-@endsection
+
+
+@endSection

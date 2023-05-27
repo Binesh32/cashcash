@@ -26,14 +26,14 @@
 									</a>
 									<ul>
 										<li>
-											<a href="admin_profile.html">
+											<a href="{{ route('adminprofile') }}">
 												<i class="fa fa-user"></i>
 												Profile
 											</a>
 										</li>
 
 										<li>
-											<a href="admin_signin.html">
+											<a href="{{ route('adminlogin') }}">
 												<i class="fa fa-sign-out"></i>
 												Log Out
 											</a>
@@ -52,16 +52,23 @@
 							
 							<ul class="menu-click">
 								<li>
-									<a href="#">
+									<a href="{{ route('inboxlist') }}">
 										<i class="fa fa-user"></i>
 										Inbox
 									</a>
 									
 								</li>
 								<li>
-									<a href="admin_posts.html">
+									<a href="{{route('postlist')}}">
 										<i class="fa fa-file-text"></i>
 										Posts
+									</a>
+								
+								</li>
+								<li>
+									<a href="{{ route('bloglist') }}">
+										<i class="fa fa-file-text"></i>
+										Blogs
 									</a>
 								
 								</li>
@@ -69,6 +76,13 @@
 									<a href="admin_products.html">
 										<i class="fa fa-suitcase"></i>
 										Products
+									</a>
+							
+								</li>
+								<li>
+									<a href="{{ route('home') }}">
+										<i class="fa fa-th-large"></i>
+										Home
 									</a>
 							
 								</li>
@@ -87,10 +101,4 @@
 			</header>
 
 			
-			<section class="ls with_bottom_border">
-				<div class="container-fluid">
-					
-					<!-- .row -->
-				</div>
-				<!-- .container -->
-			</section>
+			

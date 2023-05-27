@@ -18,9 +18,7 @@
 
 <body class="admin">
 
-	<div class="preloader">
-		<div class="preloader_image"></div>
-	</div>
+	
 
 
 	<div id="canvas">

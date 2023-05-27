@@ -3,7 +3,7 @@
 @section('content')
 
 <h2 class="text-center">
-									Organization Sign Up New Account
+									User Sign Up New Account
 								</h2>
 
 <section class="ls section_padding_top_100 section_padding_bottom_100">
@@ -14,22 +14,44 @@
 						<form class="shop-register" role="form">
 
 							<div class="col-sm-6">
-								
-
-								<div class="form-group" id="billing_company_field">
-									<label for="billing_organization" class="control-label">
-										<span class="grey">Organization Name:</span>
+								<div class="form-group validate-required" id="billing_first_name_field">
+									<label for="billing_first_name" class="control-label">
+										<span class="grey">First Name:</span>
+										<span class="required">*</span>
 									</label>
 
-									<input type="text" class="form-control "style="background-color: lightgrey;" name="billing_company" id="billing_company" placeholder="" value="">
+									<input type="text" class="form-control "style="background-color: lightgrey;" name="billing_first_name" id="billing_first_name" placeholder="" value="">
+								</div>
 
+								<div class="form-group">
+									<label for="billing_state" class="control-label">
+										<span class="grey">Gender</span>
+										<span class="required">*</span>
+									</label>
+
+									<select class="form-control"style="background-color: lightgrey;" name="billing_state" id="billing_state">
+										<option value="">Select …</option>
+										<option value="KT">Male</option>
+										<option value="LA">Female</option>
+										<option value="BH">Others</option>
+										
+										
+									</select>
 								</div>
 
 
 							</div>
 
 							<div class="col-sm-6">
-								
+								<div class="form-group validate-required" id="billing_last_name_field">
+									<label for="billing_last_name" class="control-label">
+										<span class="grey">Last Name:</span>
+										<span class="required">*</span>
+									</label>
+
+									<input type="text" class="form-control "style="background-color: lightgrey;" name="billing_last_name" id="billing_last_name" placeholder="" value="">
+
+								</div>
 
 								<div class="form-group validate-required validate-email" id="billing_email_field">
 									<label for="billing_email" class="control-label">
@@ -122,6 +144,7 @@
 
 								<button type="submit" class="theme_button wide_button color1 topmargin_40">Sign Up</button>
 								<button type="reset" class="theme_button wide_button">Clear Form</button>
+
 								<a class="theme_button color1 wide_button"  style="margin-left: 61rem;"href="{{ route('home') }}">Home</a>
 
 								<p class="divider_20 text-center">

@@ -22,6 +22,12 @@
 										</li>
 
 										<li>
+											<a href="{{ route('post') }}">Posts</a>
+											
+											<!-- eof mega menu -->
+										</li>
+
+										<li>
 											<a href="{{ route('blogs') }}">Blogs</a>
 											
 										</li>
@@ -35,12 +41,12 @@
 										<!-- eof features -->
 
 
-										<!-- gallery -->
+										
 										<li>
-											<a href="gallery-regular.html">About Us</a>
+											<a href="{{ route('about') }}">About Us</a>
 											
 										</li>
-										<!-- eof Gallery -->
+										
 
 										
 
@@ -58,13 +64,13 @@
 								<ul class="mainmenu nav sf-menu">
 								
 								<li >
-											<a href="#">SIGN UP</a>
+											<a href="{{ route('usersignup') }}">SIGN UP</a>
 											<ul>
 												<li>
-													<a href="index-2.html">As User</a>
+													<a href="{{ route('usersignup') }}">As User</a>
 												</li>
 												<li>
-													<a href="index_static.html">As Organization</a>
+													<a href="{{ route('organizationsignup') }}">As Organization</a>
 												</li>
 												<li>
 													<a href="index_singlepage.html">As Admin</a>
@@ -72,7 +78,19 @@
 												
 											</ul>
 										</li>
-								<li><a href="contact.html">LOG IN</a></li> 
+								<li><a href="{{ route('userlogin') }}">LOG IN</a>
+								<ul>
+												<li>
+													<a href="{{ route('userlogin') }}">As User</a>
+												</li>
+												<li>
+													<a href="{{ route('organizationlogin') }}">As Organization</a>
+												</li>
+												<li>
+													<a href="{{ route('adminlogin') }}">As Admin</a>
+												</li>
+												
+											</ul></li> 
 								</ul>
 									
 								</div>
