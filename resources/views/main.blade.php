@@ -11,6 +11,24 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css" >
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<style>
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .user-info i {
+      margin-right: 5px;
+    }
+
+		.small-icon {
+    width: 32px;
+    height: 32px;
+}
+
+  </style>
 </head>
 
 

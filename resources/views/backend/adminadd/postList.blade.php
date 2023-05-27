@@ -2,12 +2,12 @@
 
 @section('content')
 
-<section class="ls section_padding_top_50 section_padding_bottom_50 columns_padding_10">
+<section class="section" style="background-color: white;">
 				<div class="container-fluid">
 
 					<div class="row">
 						<div class="col-md-12">
-							<h3>Inbox list</h3>
+							<h3>Posts</h3>
 						</div>
 						<!-- .col-* -->
 					</div>
@@ -26,18 +26,24 @@
                     <td class="media-middle text-center">
                       <input type="checkbox">
                     </td>
-                    <th>From</th>
-                    <th>Message:</th>
+                    <th>Title:</th>
+                    <th>Author:</th>
                     <th>Date:</th>
+                    <th>Categories:</th>
                     
-                    
-                   
+                    <th>Actions:</th> <!-- Added column for actions -->
                   </tr>
                   <tr class="item-editable">
                     <td class="media-middle text-center">
                       <input type="checkbox">
                     </td>
-                   
+                    <td class="media-middle">
+                      <h5>
+                        <a href="admin_post.html">
+                          Consectetur adipisicing elit
+                        </a>
+                      </h5>
+                    </td>
                     <td>
                       <div class="media">
                         <div class="media-left">
@@ -51,21 +57,20 @@
                         </div>
                       </div>
                     </td>
-
-                    <td>
-												<h5>
-													<a href="#">
-										Inventore accusamus illo
-									</a>
-												</h5>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero itaque dolor laboriosam dolores magnam mollitia, voluptatibus inventore accusamus illo.</p>
-											</td>
                     <td class="media-middle">
                       <time datetime="2017-02-08T20:25:23+00:00" class="entry-date">08.02.2017 at 20:25</time>
                     </td>
+                    <td class="media-middle">
+                      uncategorized, category1
+                    </td>
                     
-                    
-                    
+                    <td class="media-middle"> <!-- Added column for actions -->
+                      
+                      <button class="btn btn-sm btn-primary edit-button">Edit</button>
+                      <button class="btn btn-sm btn-info comment-button">Comment</button>
+                      <button class="btn btn-sm btn-danger delete-button">Delete</button>
+                      
+                    </td>
                   </tr>
                   <!-- Additional table rows -->
                 </table>
